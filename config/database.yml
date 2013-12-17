@@ -1,0 +1,9 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: vendingMachine
+  pool: 5
+  timeout: 5000
+  username: root
+  password: root
+  host: localhost
