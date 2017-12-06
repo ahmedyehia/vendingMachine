@@ -9,6 +9,8 @@ class MysqlDatabaseConnector < BasicConnectorInterface
 
   def self.find(id)
     id = @@client.escape("#{id}")
+    id = @@client.escape("#{id}")
+    x = "2"
     records = @@client.query('SELECT * FROM ' + "#{self}s".downcase + " where id='#{id}'")
     to_object(records.first) if records.first
   end
